@@ -4,6 +4,12 @@
 
     </head>
 
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+     </style>
+
     <body>
         <h1>WELCOME!</h1>
         <img src="../zettacamp/img/_DSC3937.JPG" alt="me" style="width:200px">
@@ -23,8 +29,38 @@
         <h4>A little story about myself</h4>
         <p>
             Hi everyone, you can call me <i>Iceh</i>. I'm from South Tangerang. My hobbies are watching <b>film and series, photography and videography, gaming, and study</b>
-
         </p>
+
+        <div class="table">
+            <table style="width:100%;">
+                <tr>
+                    <th>My favorite photography works</th>
+                    <th>My favorite videography works</th>
+                    <th>My current favorite songs</th> 
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="../zettacamp/img/_DSC0328.jpg" alt="The Overtunes" style="width:200px">
+                    </td>
+
+                    <td>
+                        <video width="320" height="240" controls>
+                            <source src="../zettacamp/img/Hyper3DFinalPost.mp4" type="video/mp4">
+                        </video>
+                    </td>
+
+                    <td>
+                        <audio controls autoplay>
+                            <source src="y2mate.com - The Weeknd  Best Friends Audio.mp3" type="audio/mpeg">
+                        </audio>
+                    </td>
+
+                </tr>
+
+
+            </table>
+        </div>
         
         
         <div class="sosial media">
@@ -39,6 +75,45 @@
 
         </div>
         
+        <div class="works">
+            <h4>You can fill the data for collaboration</h4>
+            <form>
+                
+                <label for="fname">First Name:</label> <br>
+                <input type="text" id="fname" name="fname"> <br>
+                <label for="lname">Last Name:</label> <br>
+                <input type="text" id="lname" name="lname">
+
+                <p>Tell us about your project</p>
+                <textarea name="project" id="project" cols="50" rows="10"></textarea>
+
+                <p>Gender</p>
+                <input type="radio" name="gender" id="gender" value="male">
+                <label for="gender">Male</label><br>
+                <input type="radio" name="gender" id="gender" value="female">
+                <label for="gender">Female</label><br>
+
+                <p>Choose the works</p>
+                <input type="checkbox" name="photography" id="photo" value="Photography">
+                <label for="Photography">Photography</label><br>
+                <input type="checkbox" name="videography" id="video" value="videography">
+                <label for="videography">Videography</label><br><br>
+
+                <label for="email">Enter your email     :</label>
+                <input type="email" id="email" name="email" style="width:200px" ><br> <br>
+
+                <label for="phone">Enter a phone number :</label>
+                <input type="tel" id="phone" name="phone" placeholder="08xx-xxxx-xxxx" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"><br><br>
+
+                <label for="homepage">Add your homepage:</label>
+                <input type="url" id="homepage" name="homepage"><br><br>
+                <input type="submit">
+
+
+
+            </form>
+
+        </div>
 
 
 
