@@ -48,4 +48,33 @@ function purchase (books, discount, taxes) {
 
 }
 
-purchase(book,30,10)
+function credit(totalpay, duration, taxes) {
+    terms = [];
+    totalcreds = 0;
+    console.log("");
+    console.log("   Credit Menu   ");
+    console.log("");
+
+    console.log("Total Price : " + totalpay);
+    console.log("  ");
+    price = (totalpay / duration);
+
+    const taxedprice = price * (taxes/100);
+    const credsprice = price + taxedprice;
+
+    for (let i = 0; i < duration; i++) {
+        terms.push({
+            month: i+1, payment: credsprice
+        });
+        
+        console.log("Payment month " + (i+1)+"" +credsprice);
+        totalcreds += credsprice;
+    }
+
+    console.log("Price total for creds : " + totalcreds);
+    return terms;
+
+}
+
+//purchase(book,30,10)
+credit(purchase(book,30,10),5,5);
